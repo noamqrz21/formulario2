@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icono.png">
+    <title>Gomu´s Kitchen</title>
+</head>
+<body>
+    <div class="algo">
+        <div class="nose" style="text-align: center;">
+            <h2 style="text-align: center;">Bienvenido a Gomu´s Kitchen</h2>
+        </div>
+    </div>
+    <div class="coso">
+        <div class="menu">
+
+            <div class="papa">
+                <h3>Bombas de papa</h3>
+                <img src="img/papa.png" alt="">
+            </div>
+
+            <div class="milanesa">
+                <h3>Milanesa con puré</h3>
+                <img src="img/mila2.png" alt="">
+            </div>
+
+            <div class="mariscos">
+                <h3>Escabeche de mariscos</h3>
+                <img src="img/mariscos.png" alt="">
+            </div>
+
+            <div class="bife">
+                <h3>Bife con papas fritas </h3>
+                <img src="img/bife.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="postres">
+
+            <div class="tiramisu">
+                <h3>Tiramisú</h3>
+                <img src="img/tiramisú.png" alt="">
+            </div>
+
+            <div class="flan">
+                <h3>Flan</h3>
+                <img src="img/flan.png" alt="">
+            </div>
+
+            <div class="galletas">
+                <h3>Cookies con Chips</h3>
+                <img src="img/galletas.png" alt="">
+            </div>
+
+            <div class="tarta">
+                <h3>Tarta de Queso </h3>
+                <img src="img/Tarta.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="Formulario">
+            <form action="agendado.html" method="post"> <!-- lo siguiente será del video de donde saqué el "post" solo para redireccionar a otro html: https://www.youtube.com/watch?v=DVU0ZWnmx1U -->
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+
+                <label for="telefono">Celular:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <br><br>
+
+                <label for="fecha">Fecha de la reserva:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <br><br>
+
+                <label for="personas">Número de personas:</label>
+                <input type="number" id="personas" name="personas" min="1" max="20" required>
+                <br><br>
+
+                <p>¿Algún comensal tiene alergias?</p>
+                <input type="radio" id="alergia_si" name="alergia" value="si">
+                <label for="alergia_si">Sí</label>
+                <input type="radio" id="alergia_no" name="alergia" value="no">
+                <label for="alergia_no">No</label>
+                <br><br>
+
+                <label for="detalles">Detalles o comentarios:</label><br>
+                <textarea id="detalles" name="detalles" rows="4" cols="20"></textarea>
+                <br><br>
+
+                <button type="submit">Enviar reserva</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
